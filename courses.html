@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Academy | Courses & Training</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+  <!-- Main Navigation -->
+  <!-- (Include the same nav structure here for brevity in generation) -->
+  <nav class="navbar navbar-expand-lg fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold text-uppercase" style="letter-spacing: 1px; font-size: 0.9rem;">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+          <li class="nav-item"><a class="nav-link" href="credentials.html">Credentials</a></li>
+          <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" id="rtl-toggle" class="nav-link fw-bold">RTL</a>
+          <a href="#" id="theme-toggle" class="nav-link fs-5"><i class="bi bi-moon-fill"></i></a>
+          <a href="signup.html" class="btn btn-secondary btn-sm px-3">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="py-5 mt-5 bg-color">
+    <div class="container py-5 text-center" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">OUR <span style="color: var(--secondary-color);">COURSES</span></h1>
+      <p class="lead text-muted mx-auto" style="max-width: 600px;">From beginner fundamentals to elite competitive shooting.</p>
+    </div>
+  </section>
+
+  <!-- Course List Section -->
+  <section class="py-5 bg-surface">
+    <div class="container py-5">
+            <div class="row g-5">
+        <!-- Beginner Courses -->
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="card bg-color border border-secondary shadow-lg h-100 p-4 rounded-4 position-relative overflow-hidden transition-hover" style="z-index: 1;">
+            <div class="position-absolute top-0 end-0 p-3 opacity-25" style="z-index: -1;">
+              <i class="bi bi-shield-check" style="font-size: 8rem;"></i>
+            </div>
+            <div class="d-flex align-items-center mb-4 pb-3 border-bottom border-secondary">
+              <div class="d-flex align-items-center justify-content-center bg-dark text-secondary fw-bold rounded-3 me-3 shadow" style="width: 55px; height: 55px; font-size: 1.5rem;">
+                01
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 text-uppercase" style="letter-spacing: 1px;">Fundamentals</h3>
+              </div>
+              <span class="badge bg-secondary text-dark ms-auto px-3 py-2 rounded-pill fw-bold">Beginner</span>
+            </div>
+            <p class="text-muted mb-4">Perfect for first-time owners or those looking to refresh their basic safety and handling skills.</p>
+            
+            <div class="d-flex flex-column gap-3 mt-auto">
+              <div class="p-3 bg-dark rounded border border-secondary transition-hover" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h6 class="fw-bold text-white mb-0">Intro to Handguns</h6>
+                  <span class="badge bg-secondary text-dark rounded-pill fw-bold fs-6">$125</span>
+                </div>
+                <small class="text-white-50"><i class="bi bi-clock me-1"></i> 4 Hours &bull; Classroom + Range</small>
+              </div>
+              
+              <div class="p-3 bg-dark rounded border border-secondary transition-hover" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h6 class="fw-bold text-white mb-0">Basic Rifle Marksmanship</h6>
+                  <span class="badge bg-secondary text-dark rounded-pill fw-bold fs-6">$150</span>
+                </div>
+                <small class="text-white-50"><i class="bi bi-clock me-1"></i> 6 Hours &bull; Classroom + Range</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate Courses -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card bg-color border border-secondary shadow-lg h-100 p-4 rounded-4 position-relative overflow-hidden transition-hover" style="z-index: 1;">
+            <div class="position-absolute top-0 end-0 p-3 opacity-25" style="z-index: -1;">
+              <i class="bi bi-crosshair" style="font-size: 8rem;"></i>
+            </div>
+            <div class="d-flex align-items-center mb-4 pb-3 border-bottom border-secondary">
+              <div class="d-flex align-items-center justify-content-center bg-dark text-secondary fw-bold rounded-3 me-3 shadow" style="width: 55px; height: 55px; font-size: 1.5rem;">
+                02
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 text-uppercase" style="letter-spacing: 1px;">Defensive</h3>
+              </div>
+              <span class="badge bg-primary text-white ms-auto px-3 py-2 rounded-pill fw-bold" style="background-color: var(--primary-color) !important;">Intermediate</span>
+            </div>
+            <p class="text-muted mb-4">Take your skills to the next level with dynamic drills, drawing from a holster, and rapid target acquisition.</p>
+            
+            <div class="d-flex flex-column gap-3 mt-auto">
+              <div class="p-3 bg-dark rounded border border-secondary transition-hover" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h6 class="fw-bold text-white mb-0">Concealed Carry CCW</h6>
+                  <span class="badge bg-secondary text-dark rounded-pill fw-bold fs-6">$180</span>
+                </div>
+                <small class="text-white-50"><i class="bi bi-clock me-1"></i> 8 Hours &bull; Certification Included</small>
+              </div>
+              
+              <div class="p-3 bg-dark rounded border border-secondary transition-hover" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h6 class="fw-bold text-white mb-0">Defensive Pistol I</h6>
+                  <span class="badge bg-secondary text-dark rounded-pill fw-bold fs-6">$200</span>
+                </div>
+                <small class="text-white-50"><i class="bi bi-clock me-1"></i> 6 Hours &bull; Range Only</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advanced Courses -->
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="card bg-color border border-secondary shadow-lg h-100 p-4 rounded-4 position-relative overflow-hidden transition-hover" style="z-index: 1;">
+            <div class="position-absolute top-0 end-0 p-3 opacity-25" style="z-index: -1;">
+              <i class="bi bi-lightning-charge" style="font-size: 8rem;"></i>
+            </div>
+            <div class="d-flex align-items-center mb-4 pb-3 border-bottom border-secondary">
+              <div class="d-flex align-items-center justify-content-center bg-dark text-secondary fw-bold rounded-3 me-3 shadow" style="width: 55px; height: 55px; font-size: 1.5rem;">
+                03
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 text-uppercase" style="letter-spacing: 1px;">Tactical</h3>
+              </div>
+              <span class="badge text-white ms-auto px-3 py-2 rounded-pill fw-bold" style="background-color: #8c2a2a;">Advanced</span>
+            </div>
+            <p class="text-muted mb-4">High-stress scenarios, low-light training, and advanced movement techniques for experienced shooters.</p>
+            
+            <div class="d-flex flex-column gap-3 mt-auto">
+              <div class="p-3 bg-dark rounded border border-secondary transition-hover" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h6 class="fw-bold text-white mb-0">Low-Light Engagements</h6>
+                  <span class="badge bg-secondary text-dark rounded-pill fw-bold fs-6">$225</span>
+                </div>
+                <small class="text-white-50"><i class="bi bi-clock me-1"></i> 4 Hours &bull; Evening Session</small>
+              </div>
+              
+              <div class="p-3 bg-dark rounded border border-secondary transition-hover" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h6 class="fw-bold text-white mb-0">Urban Carbine Tactics</h6>
+                  <span class="badge bg-secondary text-dark rounded-pill fw-bold fs-6">$250</span>
+                </div>
+                <small class="text-white-50"><i class="bi bi-clock me-1"></i> 8 Hours &bull; Outdoor Range</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specialized Programs -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card bg-color border border-secondary shadow-lg h-100 p-4 rounded-4 position-relative overflow-hidden transition-hover" style="z-index: 1;">
+            <div class="position-absolute top-0 end-0 p-3 opacity-25" style="z-index: -1;">
+              <i class="bi bi-star" style="font-size: 8rem;"></i>
+            </div>
+            <div class="d-flex align-items-center mb-4 pb-3 border-bottom border-secondary">
+              <div class="d-flex align-items-center justify-content-center bg-dark text-secondary fw-bold rounded-3 me-3 shadow" style="width: 55px; height: 55px; font-size: 1.5rem;">
+                <i class="bi bi-star-fill text-secondary"></i>
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 text-uppercase" style="letter-spacing: 1px;">Specialized</h3>
+              </div>
+              <span class="badge text-dark ms-auto px-3 py-2 rounded-pill fw-bold" style="background-color: #d4a373;">Private</span>
+            </div>
+            <p class="text-muted mb-4">One-on-one coaching and specialized programs for competitors or specialized units.</p>
+            
+            <div class="d-flex flex-column gap-3 mt-auto">
+              <div class="p-3 bg-dark rounded border border-secondary transition-hover" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h6 class="fw-bold text-white mb-0">Private Instructor Session</h6>
+                  <span class="badge bg-secondary text-dark rounded-pill fw-bold fs-6">$90/hr</span>
+                </div>
+                <small class="text-white-50"><i class="bi bi-clock me-1"></i> Hourly &bull; Customized</small>
+              </div>
+              
+              <div class="p-3 bg-dark rounded border border-secondary transition-hover" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h6 class="fw-bold text-white mb-0">Competition Prep (USPSA/IDPA)</h6>
+                  <span class="badge bg-secondary text-dark rounded-pill fw-bold fs-6">$350</span>
+                </div>
+                <small class="text-white-50"><i class="bi bi-clock me-1"></i> 2-Day Clinic &bull; Stage Breakdown</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Calendar -->
+  <section class="py-5 bg-color border-top border-secondary">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-secondary fw-bold">SCHEDULE</h6>
+        <h2 class="display-5 fw-bold">UPCOMING CLASSES</h2>
+      </div>
+      <div class="table-responsive" data-aos="fade-up" data-aos-delay="100">
+        <table class="table table-dark table-hover align-middle border-secondary text-center">
+          <thead>
+            <tr class="text-secondary">
+              <th>Date</th>
+              <th>Course Name</th>
+              <th>Instructor</th>
+              <th>Spots Left</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="text-muted">
+            <tr>
+              <td class="fw-bold text-white">Oct 12, 09:00 AM</td>
+              <td>Intro to Handguns</td>
+              <td>Sarah Mitchell</td>
+              <td><span class="badge bg-success">5 Spots</span></td>
+              <td><a href="signup.html" class="btn btn-sm btn-outline-secondary">Enroll</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold text-white">Oct 14, 06:00 PM</td>
+              <td>Low-Light Engagements</td>
+              <td>David Vance</td>
+              <td><span class="badge bg-danger">1 Spot</span></td>
+              <td><a href="signup.html" class="btn btn-sm btn-outline-secondary">Enroll</a></td>
+            </tr>
+            <tr>
+              <td class="fw-bold text-white">Oct 18, 08:00 AM</td>
+              <td>Concealed Carry CCW</td>
+              <td>James O'Connor</td>
+              <td><span class="badge bg-success">8 Spots</span></td>
+              <td><a href="signup.html" class="btn btn-sm btn-outline-secondary">Enroll</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Bring -->
+  <section class="py-5 bg-surface border-top border-secondary">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="img-zoom-container rounded-4 shadow-lg border border-secondary" style="height: 400px;">
+            <img src="assets/images/pro_shop.png" alt="Gear" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h6 class="text-secondary fw-bold">PREPARATION</h6>
+          <h2 class="display-5 fw-bold mb-4">WHAT TO BRING</h2>
+          <p class="text-muted mb-4">Proper gear ensures a safe and productive training session. Please review our mandatory checklist before arriving.</p>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-secondary mt-1 me-3"></i> <div><strong>Valid ID:</strong> Government-issued photo ID is required for all classes.</div></li>
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-secondary mt-1 me-3"></i> <div><strong>Eye & Ear Protection:</strong> Electronic hearing protection is highly recommended for situational awareness.</div></li>
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-secondary mt-1 me-3"></i> <div><strong>Appropriate Attire:</strong> Closed-toe shoes and high-neck shirts (to prevent hot brass from causing burns).</div></li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Contact Us for Gear Questions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Events -->
+  <section class="py-5 bg-color border-top border-secondary text-center">
+    <div class="container py-5" data-aos="zoom-in">
+      <i class="bi bi-briefcase-fill text-secondary mb-3" style="font-size: 3rem;"></i>
+      <h2 class="display-6 fw-bold mb-3">CORPORATE & GROUP EVENTS</h2>
+      <p class="text-muted mx-auto mb-4" style="max-width: 600px;">Looking for a unique team-building experience? We offer private group classes, customized scenarios, and fully catered events in our VIP lounge.</p>
+      <a href="contact.html" class="btn btn-outline-secondary btn-lg px-5">Request a Group Quote</a>
+    </div>
+  </section>
+
+  <!-- 3. Why Choose Us -->
+  <section class="py-5 parallax-section" style="background-image: url('assets/images/parallax_bg.png'); padding: 100px 0;">
+    <div class="parallax-overlay" style="background: rgba(13, 17, 13, 0.85);"></div>
+    <div class="container position-relative z-1 text-white py-5">
+      <div class="row text-center g-5">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-panel h-100 military-card border-0 overflow-hidden d-flex flex-column">
+            <img src="assets/images/instructor.png" alt="Certified Instructors" class="w-100" style="height: 220px; object-fit: cover;">
+            <div class="p-4 flex-grow-1">
+              <i class="bi bi-person-badge fs-2 mb-3" style="color: var(--secondary-color);"></i>
+              <h3 class="h4 mb-3">Certified Instructors</h3>
+              <p class="text-white-50">Learn from ex-military and law enforcement professionals with decades of real-world experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-panel h-100 military-card border-0 overflow-hidden d-flex flex-column">
+            <img src="assets/images/facilities.png" alt="Modern Facilities" class="w-100" style="height: 220px; object-fit: cover;">
+            <div class="p-4 flex-grow-1">
+              <i class="bi bi-building fs-2 mb-3" style="color: var(--secondary-color);"></i>
+              <h3 class="h4 mb-3">Modern Facilities</h3>
+              <p class="text-white-50">State-of-the-art indoor and outdoor ranges equipped with dynamic target systems and ventilation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-panel h-100 military-card border-0 overflow-hidden d-flex flex-column">
+            <img src="assets/images/safety.png" alt="Safety-First Culture" class="w-100" style="height: 220px; object-fit: cover;">
+            <div class="p-4 flex-grow-1">
+              <i class="bi bi-shield-check fs-2 mb-3" style="color: var(--secondary-color);"></i>
+              <h3 class="h4 mb-3">Safety-First Culture</h3>
+              <p class="text-white-50">Rigorous safety protocols and constant supervision to ensure a secure environment for everyone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FAQ Preview -->
+  <section class="py-5 bg-surface">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-secondary fw-bold">FAQ</h6>
+        <h2 class="display-5 fw-bold">COMMON QUESTIONS</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="accordion" id="homeFaq">
+            <div class="accordion-item bg-surface border-secondary mb-3 rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq1">
+                  Do you offer rentals for beginners?
+                </button>
+              </h2>
+              <div id="homeFaq1" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                <div class="accordion-body text-muted bg-surface">
+                  Yes, we have an extensive fleet of rental firearms including handguns, rifles, and shotguns. You must use our range ammunition in all rental firearms.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-surface border-secondary mb-3 rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq2">
+                  Can I walk in, or do I need a reservation?
+                </button>
+              </h2>
+              <div id="homeFaq2" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                <div class="accordion-body text-muted bg-surface">
+                  Walk-ins are welcome based on lane availability. However, we highly recommend booking in advance, especially on weekends. VIP members get priority booking.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-surface border-secondary mb-3 rounded overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq3">
+                  What are the requirements to shoot at the range?
+                </button>
+              </h2>
+              <div id="homeFaq3" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+                <div class="accordion-body text-muted bg-surface">
+                  You must bring a valid, government-issued photo ID. Shooters under 18 must be accompanied by a legal guardian. All visitors must watch a safety video and sign a waiver on their first visit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="contact.html" class="text-secondary text-decoration-none fw-bold">View More FAQs <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Upcoming Events -->
+  <section class="py-5 bg-color">
+    <div class="container py-5">
+      <div class="d-flex justify-content-between align-items-end mb-5" data-aos="fade-up">
+        <div>
+          <h6 class="text-secondary fw-bold">CALENDAR</h6>
+          <h2 class="display-5 fw-bold">UPCOMING EVENTS</h2>
+        </div>
+        <a href="#" class="btn btn-outline-secondary d-none d-md-inline-block">View Full Calendar</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card bg-color border border-secondary h-100">
+            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
+              <span class="d-block fs-3 fw-bold text-secondary">15</span>
+              <span class="text-uppercase small text-muted">August</span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <h5 class="fw-bold mb-3">Summer Marksmanship Challenge</h5>
+              <p class="text-muted small mb-4">A friendly competition open to all skill levels. Prizes for top shooters in each class.</p>
+              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Register Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card bg-color border border-secondary h-100">
+            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
+              <span class="d-block fs-3 fw-bold text-secondary">22</span>
+              <span class="text-uppercase small text-muted">August</span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <h5 class="fw-bold mb-3">Women's Only Intro to CCW</h5>
+              <p class="text-muted small mb-4">A supportive environment focusing on concealed carry fundamentals specifically tailored for women.</p>
+              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Register Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card bg-color border border-secondary h-100">
+            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
+              <span class="d-block fs-3 fw-bold text-secondary">05</span>
+              <span class="text-uppercase small text-muted">September</span>
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <h5 class="fw-bold mb-3">Guest Instructor: Urban Tactics</h5>
+              <p class="text-muted small mb-4">Special one-day clinic hosted by former Navy SEAL instructor focusing on urban defensive strategies.</p>
+              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Join Waitlist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5 border-top" style="border-color: #2c382c !important;">
+    <div class="container py-4">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h3 class="font-outfit fw-bold mb-4" style="letter-spacing: 2px;">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></h3>
+          <p class="text-white-50">Providing world-class firearms training and premium range facilities for professionals and civilians alike.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="text-white-50 text-decoration-none fs-4 hover-secondary"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white-50 text-decoration-none fs-4 hover-secondary"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white-50 text-decoration-none fs-4 hover-secondary"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <h5 class="mb-4 text-secondary">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li class="mb-2"><a href="courses.html" class="text-white-50 text-decoration-none">Courses</a></li>
+            <li class="mb-2"><a href="membership.html" class="text-white-50 text-decoration-none">Membership</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5 class="mb-4 text-secondary">Resources</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="credentials.html" class="text-white-50 text-decoration-none">Credentials</a></li>
+            <li class="mb-2"><a href="facilities.html" class="text-white-50 text-decoration-none">Facilities</a></li>
+            <li class="mb-2"><a href="gallery.html" class="text-white-50 text-decoration-none">Gallery</a></li>
+            <li class="mb-2"><a href="signup.html" class="text-white-50 text-decoration-none">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="mb-4 text-secondary">Newsletter</h5>
+          <p class="text-white-50">Subscribe to get the latest news and offers.</p>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control bg-transparent text-white border-secondary" placeholder="Email Address">
+            <button class="btn btn-secondary" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 pt-4 border-top" style="border-color: #2c382c !important;">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="text-white-50 mb-0">&copy; 2026 Elite Academy. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & AOS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
