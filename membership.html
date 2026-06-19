@@ -20,9 +20,20 @@
 <body>
 
   <!-- Main Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
+  <nav class="navbar navbar-expand-xl fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></a>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="12" r="6"></circle>
+          <circle cx="12" cy="12" r="2"></circle>
+          <line x1="12" y1="2" x2="12" y2="4"></line>
+          <line x1="12" y1="20" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="4" y2="12"></line>
+          <line x1="20" y1="12" x2="22" y2="12"></line>
+        </svg>
+        <span>ELITE<span style="color:var(--secondary-color)">ACADEMY</span></span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -69,7 +80,7 @@
             <div class="card-body">
               <h3 class="card-title fw-bold mb-3">Monthly</h3>
               <div class="display-5 fw-bold mb-3" style="color: var(--secondary-color);">$49<span class="fs-5 text-muted">/mo</span></div>
-              <ul class="list-unstyled mb-4 text-start">
+              <ul class="list-unstyled mb-4 d-inline-block text-start">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited range time (Weekdays)</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Free standard target per visit</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>10% off training courses</li>
@@ -86,7 +97,7 @@
             <div class="card-body">
               <h3 class="card-title fw-bold mb-3">Annual</h3>
               <div class="display-5 fw-bold mb-3" style="color: var(--secondary-color);">$499<span class="fs-5 text-muted">/yr</span></div>
-              <ul class="list-unstyled mb-4 text-start">
+              <ul class="list-unstyled mb-4 d-inline-block text-start">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited range time (Any day)</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Two free standard targets per visit</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>15% off training courses</li>
@@ -102,7 +113,7 @@
             <div class="card-body">
               <h3 class="card-title fw-bold mb-3">VIP Elite</h3>
               <div class="display-5 fw-bold mb-3" style="color: var(--secondary-color);">$999<span class="fs-5 text-muted">/yr</span></div>
-              <ul class="list-unstyled mb-4 text-start">
+              <ul class="list-unstyled mb-4 d-inline-block text-start">
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Priority lane booking</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Free premium targets</li>
                 <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>25% off training courses</li>
@@ -290,36 +301,7 @@
     </div>
   </section>
 
-  <!-- 8. Elite Pro Shop -->
-  <section class="py-5 bg-surface border-top border-bottom" style="border-color: #2c382c !important;">
-    <div class="container py-5">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6" data-aos="fade-right">
-          <h6 class="text-secondary fw-bold">EQUIPMENT & GEAR</h6>
-          <h2 class="display-5 fw-bold mb-4">THE ELITE PRO SHOP</h2>
-          <p class="lead mb-4 text-muted">Stocked with the highest quality firearms, ammunition, tactical gear, and accessories. Members receive exclusive discounts.</p>
-          <ul class="list-unstyled mb-5">
-            <li class="mb-3 d-flex align-items-center"><i class="bi bi-bullseye text-secondary fs-4 me-3"></i> Top-tier firearms from leading brands</li>
-            <li class="mb-3 d-flex align-items-center"><i class="bi bi-shield text-secondary fs-4 me-3"></i> Tactical apparel, eye & ear protection</li>
-            <li class="mb-3 d-flex align-items-center"><i class="bi bi-tools text-secondary fs-4 me-3"></i> Full-service gunsmithing and ultrasonic cleaning</li>
-            <li class="mb-3 d-flex align-items-center"><i class="bi bi-tag text-secondary fs-4 me-3"></i> FFL Transfers and Special Orders</li>
-          </ul>
-          <a href="#" class="btn btn-outline-secondary btn-lg px-5">Browse Catalog</a>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <div class="position-relative">
-            <div class="img-zoom-container rounded-4 shadow-lg overflow-hidden border border-secondary" style="height: 400px;">
-              <img src="assets/images/pro_shop.png" alt="Pro Shop" class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="position-absolute bottom-0 end-0 bg-secondary text-dark p-4 rounded-4 shadow-sm" style="transform: translate(10%, 10%); max-width: 250px;">
-              <h4 class="fw-bold mb-0">15% OFF</h4>
-              <p class="small mb-0 fw-semibold">Storewide for VIP Members</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- 6. Testimonials -->
   <section class="py-5 bg-color">
@@ -336,7 +318,7 @@
             </div>
             <p class="fst-italic text-muted mb-4">"The credentialing system gave me a clear path to improve. I started at Level 1 with zero experience, and now I'm competing in local matches!"</p>
             <div class="d-flex align-items-center mt-auto">
-              <div class="rounded-circle bg-secondary d-flex justify-content-center align-items-center fw-bold fs-5 text-dark" style="width: 50px; height: 50px;">JS</div>
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="John Smith" class="rounded-circle border border-secondary" style="width: 50px; height: 50px; object-fit: cover;">
               <div class="ms-3">
                 <h6 class="mb-0 fw-bold">John Smith</h6>
                 <span class="text-muted small">Advanced Member</span>
@@ -351,7 +333,7 @@
             </div>
             <p class="fst-italic text-muted mb-4 flex-grow-1">"The facilities are top-notch and the instructors are incredibly patient but professional. Highly recommend the VIP membership."</p>
             <div class="d-flex align-items-center mt-auto">
-              <div class="rounded-circle bg-secondary d-flex justify-content-center align-items-center fw-bold fs-5 text-dark" style="width: 50px; height: 50px;">MD</div>
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Mike Davis" class="rounded-circle border border-secondary" style="width: 50px; height: 50px; object-fit: cover;">
               <div class="ms-3">
                 <h6 class="mb-0 fw-bold">Mike Davis</h6>
                 <span class="text-muted small">VIP Member</span>
@@ -366,7 +348,7 @@
             </div>
             <p class="fst-italic text-muted mb-4 flex-grow-1">"Their safety-first culture immediately put me at ease. The defensive training course completely changed my perspective on personal protection."</p>
             <div class="d-flex align-items-center mt-auto">
-              <div class="rounded-circle bg-secondary d-flex justify-content-center align-items-center fw-bold fs-5 text-dark" style="width: 50px; height: 50px;">ST</div>
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Thompson" class="rounded-circle border border-secondary" style="width: 50px; height: 50px; object-fit: cover;">
               <div class="ms-3">
                 <h6 class="mb-0 fw-bold">Sarah Thompson</h6>
                 <span class="text-muted small">Level 2 Student</span>
@@ -399,7 +381,18 @@
     <div class="container py-4">
       <div class="row g-4">
         <div class="col-lg-4">
-          <h3 class="font-outfit fw-bold mb-4" style="letter-spacing: 2px;">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></h3>
+          <h3 class="font-outfit fw-bold mb-4 d-flex align-items-center gap-2" style="letter-spacing: 2px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+              <line x1="12" y1="2" x2="12" y2="4"></line>
+              <line x1="12" y1="20" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="4" y2="12"></line>
+              <line x1="20" y1="12" x2="22" y2="12"></line>
+            </svg>
+            <span>ELITE<span style="color:var(--secondary-color)">ACADEMY</span></span>
+          </h3>
           <p class="text-white-50">Providing world-class firearms training and premium range facilities for professionals and civilians alike.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#" class="text-white-50 text-decoration-none fs-4 hover-secondary"><i class="bi bi-facebook"></i></a>
@@ -455,5 +448,10 @@
   <!-- Custom Scripts -->
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="btn btn-secondary rounded-circle shadow-lg" title="Go to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
 </body>
 </html>

@@ -20,9 +20,20 @@
 <body>
 
   <!-- Main Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
+  <nav class="navbar navbar-expand-xl fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></a>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="12" r="6"></circle>
+          <circle cx="12" cy="12" r="2"></circle>
+          <line x1="12" y1="2" x2="12" y2="4"></line>
+          <line x1="12" y1="20" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="4" y2="12"></line>
+          <line x1="20" y1="12" x2="22" y2="12"></line>
+        </svg>
+        <span>ELITE<span style="color:var(--secondary-color)">ACADEMY</span></span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -75,30 +86,30 @@
       </div>
       
       <div class="row g-4 position-relative">
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
           <div class="military-card text-center p-4 h-100">
-            <div class="badge-credential mb-4">1</div>
+            <img src="assets/images/level1_safety.png" alt="Foundations" class="rounded-circle mb-4 border border-secondary" style="width: 80px; height: 80px; object-fit: cover;">
             <h4 class="mb-3">Foundations</h4>
             <p class="text-muted small">Safety, basic handling, and marksmanship fundamentals. The bedrock of your training.</p>
           </div>
         </div>
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
           <div class="military-card text-center p-4 h-100">
-            <div class="badge-credential mb-4">2</div>
+            <img src="assets/images/level2_marksman.png" alt="Defensive" class="rounded-circle mb-4 border border-secondary" style="width: 80px; height: 80px; object-fit: cover;">
             <h4 class="mb-3">Defensive</h4>
             <p class="text-muted small">Concealed carry, drawing from holster, and quick target acquisition in stress scenarios.</p>
           </div>
         </div>
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
           <div class="military-card text-center p-4 h-100">
-            <div class="badge-credential mb-4">3</div>
+            <img src="assets/images/level3_tactical.png" alt="Tactical" class="rounded-circle mb-4 border border-secondary" style="width: 80px; height: 80px; object-fit: cover;">
             <h4 class="mb-3">Tactical</h4>
             <p class="text-muted small">Movement, cover/concealment, low-light shooting, and advanced firearm manipulation.</p>
           </div>
         </div>
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
           <div class="military-card text-center p-4 h-100 border-secondary" style="border-width: 2px;">
-            <div class="badge-credential mb-4 bg-secondary text-dark border-dark"><i class="bi bi-star-fill"></i></div>
+            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?auto=format&fit=crop&w=200&q=80" alt="Expert/Pro" class="rounded-circle mb-4 border border-secondary" style="width: 80px; height: 80px; object-fit: cover;">
             <h4 class="mb-3 text-secondary">Expert/Pro</h4>
             <p class="text-muted small">Competitive shooting, instructor certification, and elite tier memberships.</p>
           </div>
@@ -178,59 +189,6 @@
     </div>
   </section>
 
-  <!-- 5. Upcoming Events -->
-  <section class="py-5 bg-color">
-    <div class="container py-5">
-      <div class="d-flex justify-content-between align-items-end mb-5" data-aos="fade-up">
-        <div>
-          <h6 class="text-secondary fw-bold">CALENDAR</h6>
-          <h2 class="display-5 fw-bold">UPCOMING EVENTS</h2>
-        </div>
-        <a href="#" class="btn btn-outline-secondary d-none d-md-inline-block">View Full Calendar</a>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card bg-surface border border-secondary h-100">
-            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
-              <span class="d-block fs-3 fw-bold text-secondary">15</span>
-              <span class="text-uppercase small text-muted">August</span>
-            </div>
-            <div class="card-body p-4 text-center d-flex flex-column">
-              <h5 class="fw-bold mb-3">Summer Marksmanship Challenge</h5>
-              <p class="text-muted small mb-4">A friendly competition open to all skill levels. Prizes for top shooters in each class.</p>
-              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Register Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card bg-surface border border-secondary h-100">
-            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
-              <span class="d-block fs-3 fw-bold text-secondary">22</span>
-              <span class="text-uppercase small text-muted">August</span>
-            </div>
-            <div class="card-body p-4 text-center d-flex flex-column">
-              <h5 class="fw-bold mb-3">Women's Only Intro to CCW</h5>
-              <p class="text-muted small mb-4">A supportive environment focusing on concealed carry fundamentals specifically tailored for women.</p>
-              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Register Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card bg-surface border border-secondary h-100">
-            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
-              <span class="d-block fs-3 fw-bold text-secondary">05</span>
-              <span class="text-uppercase small text-muted">September</span>
-            </div>
-            <div class="card-body p-4 text-center d-flex flex-column">
-              <h5 class="fw-bold mb-3">Guest Instructor: Urban Tactics</h5>
-              <p class="text-muted small mb-4">Special one-day clinic hosted by former Navy SEAL instructor focusing on urban defensive strategies.</p>
-              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Join Waitlist</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- 6. Membership Community -->
   <section class="py-5 bg-surface">
@@ -268,7 +226,18 @@
     <div class="container py-4">
       <div class="row g-4">
         <div class="col-lg-4">
-          <h3 class="font-outfit fw-bold mb-4" style="letter-spacing: 2px;">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></h3>
+          <h3 class="font-outfit fw-bold mb-4 d-flex align-items-center gap-2" style="letter-spacing: 2px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+              <line x1="12" y1="2" x2="12" y2="4"></line>
+              <line x1="12" y1="20" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="4" y2="12"></line>
+              <line x1="20" y1="12" x2="22" y2="12"></line>
+            </svg>
+            <span>ELITE<span style="color:var(--secondary-color)">ACADEMY</span></span>
+          </h3>
           <p class="text-white-50">Providing world-class firearms training and premium range facilities for professionals and civilians alike.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#" class="text-white-50 text-decoration-none fs-4 hover-secondary"><i class="bi bi-facebook"></i></a>
@@ -324,5 +293,10 @@
   <!-- Custom Scripts -->
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="btn btn-secondary rounded-circle shadow-lg" title="Go to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
 </body>
 </html>

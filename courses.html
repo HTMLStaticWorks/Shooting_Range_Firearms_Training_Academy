@@ -21,9 +21,20 @@
 
   <!-- Main Navigation -->
   <!-- (Include the same nav structure here for brevity in generation) -->
-  <nav class="navbar navbar-expand-lg fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
+  <nav class="navbar navbar-expand-xl fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></a>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="12" r="6"></circle>
+          <circle cx="12" cy="12" r="2"></circle>
+          <line x1="12" y1="2" x2="12" y2="4"></line>
+          <line x1="12" y1="20" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="4" y2="12"></line>
+          <line x1="20" y1="12" x2="22" y2="12"></line>
+        </svg>
+        <span>ELITE<span style="color:var(--secondary-color)">ACADEMY</span></span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -291,44 +302,7 @@
     </div>
   </section>
 
-  <!-- 3. Why Choose Us -->
-  <section class="py-5 parallax-section" style="background-image: url('assets/images/parallax_bg.png'); padding: 100px 0;">
-    <div class="parallax-overlay" style="background: rgba(13, 17, 13, 0.85);"></div>
-    <div class="container position-relative z-1 text-white py-5">
-      <div class="row text-center g-5">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="glass-panel h-100 military-card border-0 overflow-hidden d-flex flex-column">
-            <img src="assets/images/instructor.png" alt="Certified Instructors" class="w-100" style="height: 220px; object-fit: cover;">
-            <div class="p-4 flex-grow-1">
-              <i class="bi bi-person-badge fs-2 mb-3" style="color: var(--secondary-color);"></i>
-              <h3 class="h4 mb-3">Certified Instructors</h3>
-              <p class="text-white-50">Learn from ex-military and law enforcement professionals with decades of real-world experience.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="glass-panel h-100 military-card border-0 overflow-hidden d-flex flex-column">
-            <img src="assets/images/facilities.png" alt="Modern Facilities" class="w-100" style="height: 220px; object-fit: cover;">
-            <div class="p-4 flex-grow-1">
-              <i class="bi bi-building fs-2 mb-3" style="color: var(--secondary-color);"></i>
-              <h3 class="h4 mb-3">Modern Facilities</h3>
-              <p class="text-white-50">State-of-the-art indoor and outdoor ranges equipped with dynamic target systems and ventilation.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="glass-panel h-100 military-card border-0 overflow-hidden d-flex flex-column">
-            <img src="assets/images/safety.png" alt="Safety-First Culture" class="w-100" style="height: 220px; object-fit: cover;">
-            <div class="p-4 flex-grow-1">
-              <i class="bi bi-shield-check fs-2 mb-3" style="color: var(--secondary-color);"></i>
-              <h3 class="h4 mb-3">Safety-First Culture</h3>
-              <p class="text-white-50">Rigorous safety protocols and constant supervision to ensure a secure environment for everyone.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- 11. FAQ Preview -->
   <section class="py-5 bg-surface">
@@ -339,40 +313,40 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-          <div class="accordion" id="homeFaq">
+          <div class="accordion" id="coursesFaq">
             <div class="accordion-item bg-surface border-secondary mb-3 rounded overflow-hidden">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq1">
-                  Do you offer rentals for beginners?
+                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#coursesFaq1">
+                  What should I bring to my first training course?
                 </button>
               </h2>
-              <div id="homeFaq1" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+              <div id="coursesFaq1" class="accordion-collapse collapse" data-bs-parent="#coursesFaq">
                 <div class="accordion-body text-muted bg-surface">
-                  Yes, we have an extensive fleet of rental firearms including handguns, rifles, and shotguns. You must use our range ammunition in all rental firearms.
+                  Bring a valid ID, comfortable clothing, closed-toe shoes, and a positive attitude. Eye and ear protection are provided if you don't have your own.
                 </div>
               </div>
             </div>
             <div class="accordion-item bg-surface border-secondary mb-3 rounded overflow-hidden">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq2">
-                  Can I walk in, or do I need a reservation?
+                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#coursesFaq2">
+                  Are your instructors certified?
                 </button>
               </h2>
-              <div id="homeFaq2" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+              <div id="coursesFaq2" class="accordion-collapse collapse" data-bs-parent="#coursesFaq">
                 <div class="accordion-body text-muted bg-surface">
-                  Walk-ins are welcome based on lane availability. However, we highly recommend booking in advance, especially on weekends. VIP members get priority booking.
+                  Yes, all our instructors hold active NRA, USCCA, or military/law enforcement certifications and have undergone rigorous safety evaluations.
                 </div>
               </div>
             </div>
             <div class="accordion-item bg-surface border-secondary mb-3 rounded overflow-hidden">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaq3">
-                  What are the requirements to shoot at the range?
+                <button class="accordion-button collapsed bg-surface shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#coursesFaq3">
+                  Can I schedule a private 1-on-1 coaching session?
                 </button>
               </h2>
-              <div id="homeFaq3" class="accordion-collapse collapse" data-bs-parent="#homeFaq">
+              <div id="coursesFaq3" class="accordion-collapse collapse" data-bs-parent="#coursesFaq">
                 <div class="accordion-body text-muted bg-surface">
-                  You must bring a valid, government-issued photo ID. Shooters under 18 must be accompanied by a legal guardian. All visitors must watch a safety video and sign a waiver on their first visit.
+                  Absolutely! We offer private coaching tailored to your specific goals. You can book an instructor directly through our training portal.
                 </div>
               </div>
             </div>
@@ -385,66 +359,25 @@
     </div>
   </section>
 
-  <!-- 9. Upcoming Events -->
-  <section class="py-5 bg-color">
-    <div class="container py-5">
-      <div class="d-flex justify-content-between align-items-end mb-5" data-aos="fade-up">
-        <div>
-          <h6 class="text-secondary fw-bold">CALENDAR</h6>
-          <h2 class="display-5 fw-bold">UPCOMING EVENTS</h2>
-        </div>
-        <a href="#" class="btn btn-outline-secondary d-none d-md-inline-block">View Full Calendar</a>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card bg-color border border-secondary h-100">
-            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
-              <span class="d-block fs-3 fw-bold text-secondary">15</span>
-              <span class="text-uppercase small text-muted">August</span>
-            </div>
-            <div class="card-body p-4 text-center d-flex flex-column">
-              <h5 class="fw-bold mb-3">Summer Marksmanship Challenge</h5>
-              <p class="text-muted small mb-4">A friendly competition open to all skill levels. Prizes for top shooters in each class.</p>
-              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Register Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card bg-color border border-secondary h-100">
-            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
-              <span class="d-block fs-3 fw-bold text-secondary">22</span>
-              <span class="text-uppercase small text-muted">August</span>
-            </div>
-            <div class="card-body p-4 text-center d-flex flex-column">
-              <h5 class="fw-bold mb-3">Women's Only Intro to CCW</h5>
-              <p class="text-muted small mb-4">A supportive environment focusing on concealed carry fundamentals specifically tailored for women.</p>
-              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Register Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card bg-color border border-secondary h-100">
-            <div class="card-header bg-dark text-center border-bottom border-secondary py-3">
-              <span class="d-block fs-3 fw-bold text-secondary">05</span>
-              <span class="text-uppercase small text-muted">September</span>
-            </div>
-            <div class="card-body p-4 text-center d-flex flex-column">
-              <h5 class="fw-bold mb-3">Guest Instructor: Urban Tactics</h5>
-              <p class="text-muted small mb-4">Special one-day clinic hosted by former Navy SEAL instructor focusing on urban defensive strategies.</p>
-              <a href="#" class="btn btn-sm btn-secondary w-100 mt-auto">Join Waitlist</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-5 border-top" style="border-color: #2c382c !important;">
     <div class="container py-4">
       <div class="row g-4">
         <div class="col-lg-4">
-          <h3 class="font-outfit fw-bold mb-4" style="letter-spacing: 2px;">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></h3>
+          <h3 class="font-outfit fw-bold mb-4 d-flex align-items-center gap-2" style="letter-spacing: 2px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+              <line x1="12" y1="2" x2="12" y2="4"></line>
+              <line x1="12" y1="20" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="4" y2="12"></line>
+              <line x1="20" y1="12" x2="22" y2="12"></line>
+            </svg>
+            <span>ELITE<span style="color:var(--secondary-color)">ACADEMY</span></span>
+          </h3>
           <p class="text-white-50">Providing world-class firearms training and premium range facilities for professionals and civilians alike.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#" class="text-white-50 text-decoration-none fs-4 hover-secondary"><i class="bi bi-facebook"></i></a>
@@ -500,5 +433,10 @@
   <!-- Custom Scripts -->
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="btn btn-secondary rounded-circle shadow-lg" title="Go to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
 </body>
 </html>

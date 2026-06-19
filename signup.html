@@ -20,11 +20,23 @@
 <body>
 
   <!-- Main Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
+  <nav class="navbar navbar-expand-xl fixed-top glass-panel mx-3 mt-3" style="border-radius: 12px; padding: 0.5rem 1rem;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></a>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="12" r="6"></circle>
+          <circle cx="12" cy="12" r="2"></circle>
+          <line x1="12" y1="2" x2="12" y2="4"></line>
+          <line x1="12" y1="20" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="4" y2="12"></line>
+          <line x1="20" y1="12" x2="22" y2="12"></line>
+        </svg>
+        <span>ELITE<span style="color:var(--secondary-color)">ACADEMY</span></span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-b       </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold text-uppercase" style="letter-spacing: 1px; font-size: 0.9rem;">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -103,26 +115,26 @@ b       </button>
                 <div class="row g-3 mb-4">
                   <div class="col-md-4">
                     <input type="radio" class="btn-check" name="membershipPlan" id="planMonthly" autocomplete="off">
-                    <label class="btn btn-outline-secondary w-100 h-100 p-3 text-start" for="planMonthly">
+                    <label class="btn btn-outline-secondary membership-card w-100 h-100 p-3 text-start" for="planMonthly">
                       <div class="fw-bold mb-1">Monthly</div>
-                      <div class="fs-4 fw-bold text-white mb-2">$49<span class="fs-6 text-muted">/mo</span></div>
+                      <div class="fs-4 fw-bold mb-2">$49<span class="fs-6 text-muted">/mo</span></div>
                       <small class="text-muted d-block">Unlimited weekday access</small>
                     </label>
                   </div>
                   <div class="col-md-4">
                     <input type="radio" class="btn-check" name="membershipPlan" id="planAnnual" autocomplete="off" checked>
-                    <label class="btn btn-outline-secondary w-100 h-100 p-3 text-start position-relative" for="planAnnual">
-                      <div class="position-absolute top-0 end-0 badge bg-secondary mt-2 me-2">POPULAR</div>
+                    <label class="btn btn-outline-secondary membership-card w-100 h-100 p-3 text-start position-relative pt-4" for="planAnnual">
+                      <div class="position-absolute top-0 start-50 translate-middle-x badge bg-secondary mt-2">POPULAR</div>
                       <div class="fw-bold mb-1">Annual</div>
-                      <div class="fs-4 fw-bold text-white mb-2">$499<span class="fs-6 text-muted">/yr</span></div>
+                      <div class="fs-4 fw-bold mb-2">$499<span class="fs-6 text-muted">/yr</span></div>
                       <small class="text-muted d-block">Unlimited access + discounts</small>
                     </label>
                   </div>
                   <div class="col-md-4">
                     <input type="radio" class="btn-check" name="membershipPlan" id="planVip" autocomplete="off">
-                    <label class="btn btn-outline-secondary w-100 h-100 p-3 text-start" for="planVip">
+                    <label class="btn btn-outline-secondary membership-card w-100 h-100 p-3 text-start" for="planVip">
                       <div class="fw-bold mb-1">VIP Elite</div>
-                      <div class="fs-4 fw-bold text-white mb-2">$999<span class="fs-6 text-muted">/yr</span></div>
+                      <div class="fs-4 fw-bold mb-2">$999<span class="fs-6 text-muted">/yr</span></div>
                       <small class="text-muted d-block">Priority booking + VIP lounge</small>
                     </label>
                   </div>
@@ -189,7 +201,7 @@ b       </button>
         </div>
         <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
           <div class="military-card p-4 h-100 border-secondary border" style="border-width: 2px;">
-            <div class="fs-1 text-secondary mb-3"><i class="bi bi-target"></i></div>
+            <div class="fs-1 text-secondary mb-3"><i class="bi bi-bullseye"></i></div>
             <h5 class="fw-bold mb-2">4. Hit the Range</h5>
             <p class="text-muted small">Book lanes online, schedule 1-on-1 coaching, or buy credits for our weekly shooting events.</p>
           </div>
@@ -230,7 +242,7 @@ b       </button>
         <div class="col-lg-6" data-aos="fade-left">
           <div class="p-5 bg-color rounded-4 border border-secondary shadow-sm text-center">
             <i class="bi bi-shield-fill-check text-secondary mb-3" style="font-size: 5rem;"></i>
-            <h3 class="fw-bold text-white mb-2">SAFE & RESPONSIBLE</h3>
+            <h3 class="fw-bold mb-2">SAFE & RESPONSIBLE</h3>
             <p class="text-muted small mb-0">Elite Academy adheres strictly to state and federal firearms laws to maintain a professional, family-friendly sporting community.</p>
           </div>
         </div>
@@ -297,7 +309,18 @@ b       </button>
     <div class="container py-4">
       <div class="row g-4">
         <div class="col-lg-4">
-          <h3 class="font-outfit fw-bold mb-4" style="letter-spacing: 2px;">ELITE<span style="color:var(--secondary-color)">ACADEMY</span></h3>
+          <h3 class="font-outfit fw-bold mb-4 d-flex align-items-center gap-2" style="letter-spacing: 2px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+              <line x1="12" y1="2" x2="12" y2="4"></line>
+              <line x1="12" y1="20" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="4" y2="12"></line>
+              <line x1="20" y1="12" x2="22" y2="12"></line>
+            </svg>
+            <span>ELITE<span style="color:var(--secondary-color)">ACADEMY</span></span>
+          </h3>
           <p class="text-white-50">Providing world-class firearms training and premium range facilities for professionals and civilians alike.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#" class="text-white-50 text-decoration-none fs-4 hover-secondary"><i class="bi bi-facebook"></i></a>
@@ -350,5 +373,10 @@ b       </button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="btn btn-secondary rounded-circle shadow-lg" title="Go to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
 </body>
 </html>
