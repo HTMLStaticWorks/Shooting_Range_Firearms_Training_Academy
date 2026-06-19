@@ -1,0 +1,394 @@
+/* 
+ * Elite Academy - Modern Military Style & Design Tokens
+ */
+
+:root {
+  /* Tactical Military Palette - Light Mode Default */
+  --primary-color: #2b3a2a; /* Tactical Olive */
+  --primary-color-hover: #1e281e;
+  --secondary-color: #d4a373; /* Desert Sand / Accent */
+  --secondary-color-hover: #b88d64;
+  --accent-color: #8a9a5b; /* Lighter olive accent */
+  --bg-color: #f4f5f2; /* Off-white with green tint */
+  --bg-surface: #ffffff;
+  --text-primary: #1c211c;
+  --text-secondary: #4a544a;
+  --border-color: #d1d8d1;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Dark Theme Variables */
+[data-bs-theme="dark"] {
+  --primary-color: #5c785c;
+  --primary-color-hover: #728f72;
+  --secondary-color: #d4a373;
+  --secondary-color-hover: #e0b489;
+  --accent-color: #43522f;
+  --bg-color: #0d110d; /* Very dark olive/charcoal */
+  --bg-surface: #181f18; /* Dark tactical surface */
+  --text-primary: #e8ede8;
+  --text-secondary: #a0ada0;
+  --border-color: #2c382c;
+  --glass-bg: rgba(24, 31, 24, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+html, body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Utility Classes */
+.bg-color {
+  background-color: var(--bg-color) !important;
+}
+
+.bg-surface {
+  background-color: var(--bg-surface) !important;
+}
+
+/* Base Components */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #000;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--secondary-color-hover);
+  border-color: var(--secondary-color-hover);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-lg);
+  border-radius: 8px;
+}
+
+/* Parallax Backgrounds */
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+}
+
+/* Badges / Credentials */
+.badge-credential {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1rem;
+  background: var(--glass-bg);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease;
+}
+
+.badge-credential:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Image Zoom */
+.img-zoom-container {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-zoom-container img {
+  transition: transform 0.5s ease;
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Navigation Overrides */
+.navbar {
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: var(--bg-surface) !important;
+  box-shadow: var(--shadow-md);
+  padding: 0.5rem 0;
+}
+
+.navbar-brand {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .navbar-brand {
+  color: #fff !important;
+}
+
+/* Custom Cards */
+.military-card {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.military-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--secondary-color);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.military-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.military-card:hover::before {
+  transform: scaleY(1);
+}
+
+/* Timeline / Roadmap */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  width: 50%;
+  padding: 0 40px;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-badge {
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  border: 4px solid var(--bg-color);
+}
+
+.timeline-item:nth-child(odd) .timeline-badge {
+  right: -10px;
+}
+
+.timeline-item:nth-child(even) .timeline-badge {
+  left: -10px;
+}
+
+/* RTL Adjustments */
+[dir="rtl"] .navbar-nav {
+  margin-right: auto;
+  margin-left: 0;
+}
+[dir="rtl"] .timeline-item:nth-child(odd) {
+  text-align: left;
+}
+[dir="rtl"] .timeline-item:nth-child(even) {
+  text-align: right;
+}
+[dir="rtl"] .timeline::before {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+[dir="rtl"] .timeline-item:nth-child(odd) .timeline-badge {
+  left: -10px;
+  right: auto;
+}
+[dir="rtl"] .timeline-item:nth-child(even) .timeline-badge {
+  right: -10px;
+  left: auto;
+}
+[dir="rtl"] .military-card::before {
+  right: 0;
+  left: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  /* Adjust image containers on tablets and mobile to prevent massive heights */
+  .img-zoom-container {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Timeline Stacking */
+  .timeline::before {
+    left: 20px;
+    transform: none;
+  }
+  .timeline-item {
+    width: 100%;
+    padding: 0 0 0 50px;
+    margin-bottom: 30px;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd) .timeline-badge,
+  .timeline-item:nth-child(even) .timeline-badge {
+    left: 10px;
+    right: auto;
+  }
+
+  /* RTL Timeline overrides for mobile */
+  [dir="rtl"] .timeline::before {
+    left: auto;
+    right: 20px;
+    transform: none;
+  }
+  [dir="rtl"] .timeline-item {
+    padding: 0 50px 0 0;
+    text-align: right;
+  }
+  [dir="rtl"] .timeline-item:nth-child(odd) .timeline-badge,
+  [dir="rtl"] .timeline-item:nth-child(even) .timeline-badge {
+    left: auto;
+    right: 10px;
+  }
+
+  /* Disable parallax fixed attachment on mobile (fixes iOS zoom bug) */
+  .parallax-section {
+    background-attachment: scroll;
+  }
+
+  /* Scale down display headings for mobile */
+  .display-2 { font-size: 3rem; }
+  .display-3 { font-size: 2.5rem; }
+  .display-4 { font-size: 2rem; }
+  .display-5 { font-size: 1.75rem; }
+  .display-6 { font-size: 1.5rem; }
+  
+  /* Reduce excessive padding on mobile */
+  .py-5 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .p-5 {
+    padding: 2rem !important;
+  }
+}
+/* Accordion Styles */
+.accordion-button {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-surface) !important;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--secondary-color) !important;
+  background-color: var(--bg-color) !important;
+}
+.accordion-item {
+  background-color: var(--bg-surface);
+  border-color: var(--text-secondary);
+}
+
+/* Form Control Placeholders on Dark Backgrounds */
+.form-control.bg-dark::placeholder,
+.form-control.text-white::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.form-control.bg-transparent::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
