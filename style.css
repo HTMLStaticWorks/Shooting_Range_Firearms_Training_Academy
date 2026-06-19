@@ -50,6 +50,23 @@ html, body {
   width: 100vw;
 }
 
+/* Navbar Mobile Fix */
+@media (max-width: 400px) {
+  .navbar-brand span {
+    font-size: 1.15rem;
+  }
+  .navbar-brand svg {
+    width: 22px;
+    height: 22px;
+  }
+  .navbar {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
@@ -391,4 +408,68 @@ h1, h2, h3, h4, h5, h6 {
 }
 .form-control.bg-transparent::placeholder {
   color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Footer Hover Effects */
+footer a.text-white-50 {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a.text-white-50:hover,
+.hover-secondary:hover {
+  color: var(--secondary-color) !important;
+}
+
+footer ul.list-unstyled a.text-white-50 {
+  display: inline-block;
+}
+
+footer ul.list-unstyled a.text-white-50:hover {
+  transform: translateX(5px);
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(20px);
+}
+
+#backToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+[dir="rtl"] #backToTopBtn {
+  right: auto;
+  left: 30px;
+}
+.table-dark .text-success { color: #4ade80 !important; }
+.table-dark .text-danger { color: #f87171 !important; }
+.text-success-bright { color: #4ade80 !important; }
+.text-danger-bright { color: #f87171 !important; }
+/* Membership Cards Contrast Fix */
+.membership-card {
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+.btn-check:checked + .membership-card {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: #fff !important;
+}
+.btn-check:checked + .membership-card .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
 }
