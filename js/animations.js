@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         const target = entry.target;
                         const endVal = parseInt(target.getAttribute('data-target'), 10);
                         
-                        gsap.to(target, {
-                            innerHTML: endVal,
+                        let obj = { val: 0 };
+                        gsap.to(obj, {
+                            val: endVal,
                             duration: 2,
                             ease: "power2.out",
-                            snap: { innerHTML: 1 },
                             onUpdate: function() {
-                                target.innerHTML = Math.round(target.innerHTML);
+                                target.innerHTML = Math.round(obj.val) + '+';
                             }
                         });
                         
